@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to form</h1>
+    <form  method="post" target="_blank">
+        <a name="topmost"></a>
+<fieldset>
+            <legend>Personal Details</legend>
+       
+        <div><label for="fname" >First Name:</label>
+        <input type="text" id="fname" placeholder="Enter first name" name="fname" required=""><br>
+        <label for="lname" >Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter last name" name="lname" ><br></div>
+
+        
+    <div><label for="email" >Email:</label>
+        <input type="email" id="email" placeholder="Enter e-mail" name="email" required><br></div>
+
+        
+    <div><label for="password" >Password:</label>
+        <input type="password" id="password" placeholder="Enter password" name="password" required><br></div>
+
+        
+        <div>Gender:
+        <input checked type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br></div>
+        
+        <div><label for="hobby">Hobby:</label><br>
+            <input checked type="checkbox" id="hobby1" name="hobby1" value="Music">
+            <label for="hobby1">Music</label>
+            <input type="checkbox" id="hobby2" name="hobby2">
+            <label for="hobby1">Dance</label></div>
+
+        <div><label for="contact" >Contact</label>
+            <input type="number" disabled="contact" id="contact" required="" maxlength="10" >
+            <br>
+        </div>
+        <div><label for="date" >Date of Birth</label> 
+            <input type="date" id="Date" required="" name="date"><br>
+        </div>
+</fieldset>
+<fieldset>
+    <legend>Education Details</legend>
+    <div>Degree:<select name="group">
+        <option value="choose course">---SelectGroup---<option>
+        <option value="b.sc">B.Sc</option>
+        <option value="bca">BCA</option>
+        <option value="b.tech">B.tech</option>
+        <option value="msc">M.Sc</option>
+        <option value="mca">MCA</option>
+    </select>
+    </div>
+    <div>Engineering:<select name="E group">
+        <option value="choose course">---Select Group---</option>
+        <option value="none">None</option>
+        <option value="electrical">Electrical</option>
+        <option value="mechanical">Mechanical</option>
+        <option value="civil">Civil</option>
+        <option value="cs">Computer Science</option>
+    </select>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Address Details</legend>
+    <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="other">Other</option>
+        </select><br>
+    <p>City:<input type="text" name="city"></p>
+    <p>State:<input type="text" name="state"></p>
+    <p><table>
+       <tr>
+        <td >Correspondence Address:</td>
+        <td><textarea rows="5" cols="30"></textarea></td> 
+       
+        <td>Current Address:</td>
+        <td><textarea rows="5" cols="30"></textarea></td>
+       </tr> 
+    </table>
+    </p>
+</fieldset>
+       <p>Attach Resume
+        <input type="file">
+       </p>  
+        <p><input type="submit" value="Submit">
+        <input type="reset" value="Reset"></p>
+    </form>
+    <fieldset>
+        <legend>Video</legend>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8EbQkPwypwc?si=9F9w3qu9_TzrVSAT" title="YouTube video player" 
+        autoplay ="1" mute="1" frameborder="0"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video autoplay="1" muted="1" src="https://youtu.be/8EbQkPwypwc?si=0Bst-eR5SA-Uf5UN">
+        </video>
+    </fieldset>
+    <a href="#topmost">Back to top</a>
+    </div>
+</body>
+</html>
